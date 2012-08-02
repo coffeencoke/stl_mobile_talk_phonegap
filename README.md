@@ -4,6 +4,7 @@
 
 # Links
 
+* http://phonegap.com/
 * http://docs.phonegap.com/en/2.0.0/index.html
 * https://github.com/phonegap/phonegap-plugins/
 * http://backbonejs.org
