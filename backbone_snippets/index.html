@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WeightGURU</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <link rel="stylesheet" href="stylesheets/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="stylesheets/grid.css" type="text/css"/>
+    <link rel="stylesheet" href="stylesheets/template.css" type="text/css"/>
+    <link rel="stylesheet" href="stylesheets/modules.css" type="text/css"/>
+    <link rel="stylesheet" href="stylesheets/pages.css" type="text/css"/>
+
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/json2.js"></script>
+    <script src="javascripts/underscore.js"></script>
+    <script src="javascripts/backbone.js"></script>
+    <script src="javascripts/backbone-localstorage.js"></script>
+    <script src="javascripts/cordova-1.6.0.js"></script>
+    <script src="javascripts/jquery.serializeJSON.js"></script>
+    <script src="javascripts/jquery.measurementSelector.js"></script>
+    <script src="javascripts/dateformat.js"></script>
+    <script src="javascripts/jquery.scrollTo.js"></script>
+    <script src="javascripts/mustache.js"></script>
+    <script src="javascripts/highcharts/highcharts.js"></script>
+    <script type="text/javascript">
+      // Wait for Cordova to load
+      //
+      document.addEventListener("deviceready", onDeviceReady, false);
+
+      // Cordova is ready
+      //
+      function onDeviceReady() {
+      }
+      
+      $(function(){
+        var applicationView = new ApplicationView;
+        applicationView.render(); 
+      });
+    </script>
+  </head>
+  <body>
+    <div class='mainContainer'>
+      <section id='mainContentLoader'></section>
+    </div>
+
+    <!-- environment model -->
+    <script src="javascripts/environments.js"></script>
+
+    <!-- helpers -->
+    <script src="javascripts/helpers/application.js"></script>
+    <script src="javascripts/helpers/AppSync.js"></script>  
+
+    <!-- data collection models -->
+    <script src="javascripts/collections/registrar.js"></script>
+    <script src="javascripts/collections/account_collection.js"></script>
+    <script src="javascripts/collections/entry_collection.js"></script>
+    <script src="javascripts/collections/base_entry_collection.js"></script>
+    <script src="javascripts/collections/current_user_data_store.js"></script>
+
+    <!-- business models -->
+    <script src="javascripts/models/registration.js"></script>
+    <script src="javascripts/models/token.js"></script>
+    <script src="javascripts/models/login.js"></script>
+    <script src="javascripts/models/personal_summary.js"></script>
+    <script src="javascripts/models/account.js"></script>
+    <script src="javascripts/models/progress_chart.js"></script>
+    <script src="javascripts/models/weightless_bc_entry.js"></script>
+    <script src="javascripts/models/weightless_basic_entry.js"></script>
+    <script src="javascripts/models/entry.js"></script>
+    <script src="javascripts/models/base_entry.js"></script>
+    <script src="javascripts/models/body_composition_base_entry.js"></script>
+    <script src="javascripts/models/basic_base_entry.js"></script>
+    <script src="javascripts/models/body_composition_entry.js"></script>
+    <script src="javascripts/models/basic_entry.js"></script>
+    <script src="javascripts/models/current_user.js"></script>
+    <script src="javascripts/models/sync.js"></script>
+
+
+    <!-- views -->
+    <script src="javascripts/views/login.js"></script>
+    <script src="javascripts/views/loader.js"></script>
+    <script src="javascripts/views/new_account.js"></script>
+    <script src="javascripts/views/registration.js"></script>
+    <script src="javascripts/views/entry_history.js"></script>
+    <script src="javascripts/views/new_entry.js"></script>
+    <script src="javascripts/views/new_weightless_bc_entry.js"></script>
+    <script src="javascripts/views/new_weightless_basic_entry.js"></script>
+    <script src="javascripts/views/new_body_composition_entry.js"></script>
+    <script src="javascripts/views/new_bc_weightless_base_entry.js"></script>
+    <script src="javascripts/views/new_weightless_basic_base_entry.js"></script>
+    <script src="javascripts/views/entry_history.js"></script>
+    <script src="javascripts/views/summary.js"></script>
+    <script src="javascripts/views/logout.js"></script>
+
+    <!-- partial views -->
+    <script src="javascripts/views/main_nav.js"></script>
+    <script src="javascripts/views/header.js"></script>
+    <script src="javascripts/views/personal_summary.js"></script>
+    <script src="javascripts/views/personal_progress.js"></script>
+
+    <!-- main view - loads the initial page -->
+    <script src="javascripts/views/application.js"></script>
+  </body>
+</html>
